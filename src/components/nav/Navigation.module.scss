@@ -1,0 +1,41 @@
+@import '@/assets/styles/_vars.module';
+
+.nav {
+    width: 100%;
+    height: fit-content;
+
+    &_item {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_list {
+        width: 100%;
+        list-style-type: none;
+    }
+
+    &_link {
+        text-decoration: none;
+        color: $main-white;
+        opacity: 0.5;
+        transition: all .3s;
+
+        &:visited {
+            color: $main-white;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &-active {
+            opacity: 1;
+        }
+    }
+}
