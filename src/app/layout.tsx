@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../assets/styles/globals.scss";
+import styles from "./layout.module.scss";
+
+import Sidebar from "@/components/sidebar/Sidebar";
 
 const firstFont = Roboto({
   subsets: ["latin"],
@@ -19,7 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={firstFont.className}>{children}</body>
+      <body className={firstFont.className}>
+        <div className={styles.layout}>
+          <div className={styles.sidebar}>
+            <Sidebar />
+          </div>
+          <div className={styles.content}>{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

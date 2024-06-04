@@ -1,0 +1,13 @@
+@import '@/assets/styles/_vars.module';
+
+.icon {
+    width: 35px;
+    height: 35px;
+    fill: $main-white;
+    opacity: 0.5;
+    transition: all .3s;
+
+    &_hovered {
+        opacity: 1;
+    }
+}

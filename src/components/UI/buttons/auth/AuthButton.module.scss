@@ -1,0 +1,25 @@
+@import '@/assets/styles/_vars.module';
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .text {
+        opacity: 1;
+    }
+}
+
+.text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    color: $main-white;
+    opacity: 0.5;
+    transition: all .3s;
+}
