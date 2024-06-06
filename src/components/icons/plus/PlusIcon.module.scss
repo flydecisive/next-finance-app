@@ -1,0 +1,15 @@
+@import '@/assets/styles/_vars.module';
+
+.icon {
+    width: 25px;
+    height: 25px;
+    transition: all .3s;
+
+    & path {
+        stroke: $main-white;
+    }
+
+    &_hovering path {
+        stroke: $grey-blue;
+    }
+}

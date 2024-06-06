@@ -1,3 +1,8 @@
 export default function ExpensesPage() {
-  return <div>расходы</div>;
+  return (
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+  );
 }

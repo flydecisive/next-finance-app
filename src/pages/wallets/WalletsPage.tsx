@@ -1,3 +1,7 @@
+import PageLayout from "../layout";
+import WalletsLeft from "./left/WalletsLeft";
+import WalletsRight from "./right/WalletsRight";
+
 export default function WalletsPage() {
-  return <div>wallets</div>;
+  return <PageLayout left={<WalletsLeft />} right={<WalletsRight />} />;
 }

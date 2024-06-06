@@ -1,0 +1,24 @@
+@import '@/assets/styles/_vars.module';
+
+.layout {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 710px 350px;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+    background: $section-primary-bg;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
