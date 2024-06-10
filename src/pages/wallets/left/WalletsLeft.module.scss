@@ -1,0 +1,15 @@
+@import '@/assets/styles/_vars.module';
+
+.wrapper, .wallets {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.wrapper {
+    gap: 25px;
+}
+
+.wallets {
+    gap: 10px;
+}

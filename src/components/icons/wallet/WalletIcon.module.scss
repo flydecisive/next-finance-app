@@ -1,0 +1,10 @@
+@import '@/assets/styles/_vars.module';
+
+.icon {
+    width: 30px;
+    height: 30px;
+
+    & path {
+        fill: $grey-blue;
+    }
+}
