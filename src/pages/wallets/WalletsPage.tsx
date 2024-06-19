@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import PageLayout from "../layout";
 import WalletsLeft from "./left/WalletsLeft";
 import WalletsRight from "./right/WalletsRight";

@@ -1,0 +1,11 @@
+@import "@/assets/styles/_vars.module";
+
+.button {
+  background: $main-red;
+  transition: background-color 0.3s;
+  color: $main-white;
+
+  &:hover {
+    background: $dark-red;
+  }
+}

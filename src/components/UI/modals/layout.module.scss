@@ -1,0 +1,35 @@
+@import "@/assets/styles/_vars.module";
+
+.modal {
+  width: 500px;
+  min-height: 300px;
+  max-height: fit-content;
+  background: $main-grey;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  border: 1px solid $dark-blue;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+
+  &::backdrop {
+    position: fixed;
+    inset: 0px;
+    background: $backdrop-color;
+  }
+}
+
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $main-dark;
+  text-transform: uppercase;
+}

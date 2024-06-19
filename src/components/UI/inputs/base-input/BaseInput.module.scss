@@ -1,0 +1,43 @@
+@import "@/assets/styles/_vars.module";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $main-dark;
+}
+
+.input {
+  background: $main-white;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

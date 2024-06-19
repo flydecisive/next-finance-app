@@ -1,33 +1,25 @@
 "use client";
 
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./AddButton.module.scss";
 import PlusIcon from "@/components/icons/plus/PlusIcon";
 
-import React from "react";
+import { BaseButtonProps } from "@/types/types";
 
-interface AddButtonProps {
-  children: React.ReactNode;
-}
+interface AddButtonProps extends BaseButtonProps {}
 
-export default function AddButton({ children }: AddButtonProps) {
+export default function AddButton({ children, onClick }: AddButtonProps) {
   const [isHover, setIsHover] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
-
-  const handleButtonClick = () => {
-    if (inputRef.current) {
-      inputRef.current.click();
-    }
-  };
 
   return (
     <>
       <input type="file" style={{ display: "none" }} ref={inputRef} />
       <div
-        className={styles.button}
+        className={`button ${styles.button}`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        onClick={handleButtonClick}
+        onClick={onClick}
       >
         <PlusIcon isHover={isHover} />
         <p
