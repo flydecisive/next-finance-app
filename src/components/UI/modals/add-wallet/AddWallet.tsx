@@ -36,7 +36,10 @@ const AddWalletModal = observer(
     };
 
     const handleConfirmButton = () => {
-      walletsStore.addWallet({ ...formData, id: walletsStore.state[0].id + 1 });
+      walletsStore.addWallet({
+        ...formData,
+        id: walletsStore.state[walletsStore.state.length - 1].id + 1,
+      });
       toggleModalShow();
     };
 
